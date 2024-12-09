@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, width=device-width">
+  <link rel="stylesheet" href="tabreportevis.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+  <title>PetFinder - Reporte de avistamiento</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <img src="logo for animal rescue project.png" alt="Logo del proyecto">
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Extravios</a></li>
+        <li><a href="reportes.html">Reporte</a></li>
+        <li><a href="#">Sobre Nosotros</a></li>
+      </ul>
+    </nav>
+    <div class="user">
+      <img src="usuarios.png" alt="Usuario">
+      <span id="user-name"></span>
+
+    </div>
+  </header>
+  <div class="item2">
+    <ul>
+      <li><a href="#home">Perros</a></li>
+      <li><a href="#news">Gatos</a></li>
+      <li><a href="#contact">Otros</a></li>
+    </ul>
+  </div>
+  <div class="item3"><!--Menu--></div>
+  <div class="item4">
+    <h3>Reporte de avistamiento</h3>
+    <p>En este apartado podra realizar un reporte en caso de haber visto una mascota que parece perdida por un
+      determinado rumbo.</p>
+    <form action="" method="">
+      <table class="tablereporte">
+        <tr>
+          <td class="tdlabels"><label for="imgmascota">Foto: </label></td>
+          <td class="tdinputs"><input type="file" id="imgmascota" name="imgmascota" required></td>
+        <tr>
+        <tr>
+          <td class="tdlabels"><label for="descripcion"> Descripcion: </label></td>
+          <td class="tdinputs"><input type="text" id="descripcion" name="descripcion" required></td>
+        </tr>
+        <tr>
+          <th>Direccion del avistamiento</th>
+        </tr>
+        <tr>
+          <td class="tdlabels"> <label for="calle">Calle: </label></td>
+          <td class="tdinputs"><input type=text id="calle" name="calle" required></td>
+        </tr>
+        <tr>
+          <td class="tdlabels"> <label for="colonia">Colonia: </label></td>
+          <td class="tdinputs"><input type="text" id="colonia" name="colonia" required></td>
+        </tr>
+        <tr>
+          <td class="tdlabels"> <label for="cpostal">Codigo postal: </label></td>
+          <td class="tdinputs"><input type="text" id="cpostal" name="cpostal" required></td>
+        </tr>
+      </table>
+      <input type="submit" name="enviar" id="enviar" value="Publicar">
+    </form>
+  </div>
+  <div class="item5"><!--Right--></div>
+  <!--Pie de pagina-->
+  <footer class="footer-content">
+    <h3>PetFinder</h3>
+    <p>Aqui es donde va a ir todo la informacion
+      de la empresa PetFinder
+    </p>
+    <ul class="socials">
+      <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa fa-google"></i></a></li>
+
+    </ul>
+
+  </footer>
+  <script src="https://kit.fontawesome.com/5820c7bdf6.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

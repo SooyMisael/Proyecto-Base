@@ -1,0 +1,283 @@
+body{
+	font-family: "helvetica";
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Parkinsans", sans-serif;
+  font-size: 20px;
+  
+}
+.item1 { grid-area: header; }
+.item2 { grid-area: item2; }
+.item3 { grid-area: menu; }
+.item4 { grid-area: main; }
+.item5 { grid-area: right; }
+.item6 { grid-area: footer;
+		 border-top-style: solid;}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'item2 item2 item2 item2 item2 item2'
+    'menu main main main main right'
+    'footer footer footer footer footer footer';
+  gap: 3px;
+  /*background-color: #2196F3;*/
+  padding: 3px;
+}
+.alogin:link, .alogin:visited{
+	color:white;
+	text-decoration: none;
+}
+.aregistro:link, .aregistro:visited{
+	color: black;
+	text-decoration: none;
+
+}
+.grid-container > div {
+  background-color: white;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 30px;
+}
+/*Logo en la esquina superior izquierda*/
+.logo{
+	width: 5%;
+	display: block;
+	float: left;
+}
+/*Boton de login con animacion*/
+.user .login{
+	color: white;
+	border-radius: 12px;
+	border:none;
+	padding: 15px;
+	width: 150px;
+	text-align: center;
+	font-size: 16px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+	float: right;
+}
+.login span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.login span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.login:hover span {
+  padding-right: 25px;
+}
+
+.login:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/*Boton de registro con animacion*/
+.signup{
+	background-color: gainsboro;
+	border-radius: 12px;
+	border: none;
+	padding: 15px;
+	width: 150px;
+	text-align: center;
+	font-size: 16px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+	float: right;
+}
+.signup span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.signup span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.signup:hover span {
+  padding-right: 25px;
+}
+
+.signup:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/*Barra de navegacion*/
+.item2 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  font-size: 20px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 7px 8px;
+  text-decoration: none;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+.listainfo{
+	list-style-type: none;
+	text-align: justify;
+}
+
+.header{
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+  padding: 5px 10%;
+  margin: 0;
+}
+
+.header .logo{
+  cursor: pointer;
+}
+
+.header .logo img{
+  height: 70px;
+  width: auto;
+  border-radius: 70px;
+}
+
+.header .logo img :hover{
+  transform: scale(1,2);
+}
+
+.header .nav-links{
+  list-style: none;
+}
+
+.header .nav-links li{
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.header .nav-links li:hover{
+  transform: scale(1,1);
+}
+
+.header .nav-links a{
+  font-size: 700;
+  color: black;
+  text-decoration: none;
+}
+
+.header .nav-links li a:hover{
+  color: #ffbc0e;
+}
+
+.header .user{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #eceff1;
+  cursor: pointer;
+}
+
+.header .user img{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+footer{
+  background:  #1b3039;
+  width: 100%;
+  font-family: "Open Sans";
+  padding: 20px 10%;
+  color: #fff;
+  margin-top: auto;
+  text-align: center;
+}
+
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 2rem;
+  margin-bottom: 10px;
+}
+
+.footer-content p{
+  max-width: 500px;
+  margin: 5px auto;
+  line-height: 20px;
+  font-size: 14px;
+
+}
+
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.socials li{
+  margin: 0 10px;
+}
+
+.socials a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.socials a i{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+}
+
+.socials a:hover i{
+  color: aqua;
+}
+
+

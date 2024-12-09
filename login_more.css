@@ -1,0 +1,172 @@
+.cont_prin{
+	width:100%;
+  	overflow:auto;	}
+/*animaciones*/
+.cont_secun{
+	width: 50%;
+	height: 25%;
+	float: left;
+}
+.cont_secun{
+	position: relative;
+    width: 700px; 
+    height: 600px; 
+    overflow: hidden;
+}
+.cont_secun img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: fade 12s infinite;
+}
+
+.cont_secun img:nth-child(1) {
+    animation-delay: 0s;
+}
+.cont_secun img:nth-child(2) {
+    animation-delay: 4s;
+}
+.cont_secun img:nth-child(3) {
+    animation-delay: 8s;
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    5% { opacity: 1; }
+    33% { opacity: 1; }
+    38% { opacity: 0; }
+    100% { opacity: 0; }
+}
+/*fin*/
+
+.formulario{
+	margin: auto;
+	font-family: helvetica;
+	text-align: center;
+}
+.imagenlogin{
+	width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.subimagen{
+	width: 10%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.subtitle{
+	font-family: serif;
+	font-style:italic;
+	font-weight: bold;
+	text-align: center;
+}
+input[type=text]{
+	width: 20%;
+	padding: 10px 20px;
+	margin: 10px 0px 10px 12px;
+}
+input[type=email]{
+	width: 20%;
+	padding: 10px 20px;
+	margin: 10px 0px 10px 100px;	
+}
+input[type=password]{
+	width: 20%;
+	padding: 10px 20px;
+	margin: 10px 0px 10px 68px;
+}
+
+input[type=submit]{
+	width: 40%;
+	padding: 10px 20px;
+	margin: 10px 0px 10px 0px;
+	font-size: 20px;
+	color: white;
+	  	background: black;
+}
+input[type=reset]{
+	width: 40%;
+	padding: 10px 20px;
+	margin: 10px 0px 10px 0px;
+	font-size: 20px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Parkinsans", sans-serif;
+    font-size: 20px;
+    
+}
+
+body{
+    background-color: white;
+    overflow-x: hidden;
+
+}
+
+
+.header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+    margin: 0;
+}
+
+.header .logo{
+    cursor: pointer;
+}
+
+.header .logo img{
+    height: 70px;
+    width: auto;
+    border-radius: 70px;
+}
+
+.header .logo img :hover{
+    transform: scale(1,2);
+}
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-links li:hover{
+    transform: scale(1,1);
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: black;
+    text-decoration: none;
+}
+
+.header .nav-links li a:hover{
+    color: #ffbc0e;
+}
+
+.header .user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #eceff1;
+    cursor: pointer;
+}
+
+.header .user img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
